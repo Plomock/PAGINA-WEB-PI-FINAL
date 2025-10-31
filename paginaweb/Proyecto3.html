@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Proyecto 3</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header> 
+        <h1> Fabricación de Placa PCB </h1>
+        <p> By: Santiago Salinas Casellas </p>
+        <hr>
+    </header>
+    <main> 
+      <section>
+          <h2> --Introducción--</h2>
+          <p> Para el tercer proyecto se tuvo que diseñar, imprimir y soldar una placa PCB (circuito integrado). El PCB sería un circuito al que se le concetarían todos los componentes necesarios y un LED (verde) parpadearía intermitentemente.</p>
+          <p> La intención de este tercer proyecto era que los alumnos comprendieran el proceso de manufacturado de un PCB (una habilidad necesaria para el resto de la carrera y la vida laboral).</p>
+      </section>
+      <section>
+          <h2> --Diseño-- </h2>
+          <p> El diseño de un PCB es bastante complejo, ya que se recomienda primera empezar por el protoboard (placa blanca en la que se colocarán todos los componentes y se verificará si el circuito funciona). En este caso, el protoboard se desarrollo en línea, en Tinkercard, durante la hora de clase (guiados por el profesor Huber Girón), en lugar de hacerlo físicamente.</p>
+          <p> Este diseño se llevo a cabo durante 2 horas, el profesor fue indicando que hacer en todo momento que hacer. El diseño final del protoboard quedó de la siguiente manera: </p>
+          <iframe width="725" height="453" src="https://www.tinkercad.com/embed/1LIWA66gSqL?editbtn=1" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+      </section>
+      <section>
+        <p> Una vez se ha terminado el protoboard se pasa al siguiente escalón, hacer el diseño del circuito. En este caso se hizo el diseño en EasyEDA. </p>
+        <p> La mayoría de los alumnos no estaban familiarizados con este software, por lo que el profesor Alexandro López tomó la decisión de enseñar como funcionaba el mismo. Esto lo hizo durante una clase de 2 horas, al final de dicha clase indicó que el diseño del PCB con el LED sería de tarea.</p>
+        <p> Dado estas circunstancias cada alumno terminó teniendo un diseño diferente de PCB. En mi caso el diseño es el siguiente:</p>
+        <img src="Imagenes/diseñoPCB.jpg" alt="Diseño del PCB con el LED" width="400">
+      </section>
+      <section>
+        <p> Lastimosamente ahí no termina el diseño. La máquina que imprime/corta las placas de cobre para la realización de los PCB solamente acpeta archivos tipo Gerber, por lo que tras hacer el diseño hubo que hacer este último. </p>
+        <p> Afortunadamente Alexandro también enseño como hacerlo así que no hubo muchas complicaciones, la única que hubo fue el hecho de hacer que todas las pistas estuvieran bien conectadas, ya que todas deben de estar en la segunda capa y hay ocasiones en las que gracias al diseño pueden intercalarse unas con otros y hay que moverlas o acomodar los componentes de cierta manera para que esto no pase.</p>
+        <img src="Imagenes/gerberPCB.jpg" alt="Diseño gerber del PCB con el LED" width="400">
+      </section>
+      <section>
+        <h2> --Impresión-- </h2>
+        <p> Este proceso fue relativamente fácil, ya que Julio (el laboratorista) estuvo presente todo el tiempo que se uso la máquina, por lo que no hubo complicaciones a la hora de imprimir la placa de cobre (el PCB sin los componentes).</p>
+        <img src="Imagenes/placa.jpg" alt="Placa de cobre" width="400">
+      </section>
+      <section> 
+        <h2> --Soldadura-- </h2>
+        <p> Este proceso es el más difícil cuando se hace un PCB, pues con estaño y un cautillo caliente, hay que soldar precisamente cada componente en su lugar sin salirse de su lugar designado (evitando así generar corriente en otras partes de la placa de cobre). </p>
+        <h2> --Problema-- </h2>
+        <p> Fue en este punto en el que me dí cuenta que mi diseño no iba a funcionar, pues la placa era demasiado pequeña, lo que ocasionaría que los componentes no fueran capaces caber y no hubiera espacio para realizar la soldadura.</p>
+        <p> Por unanimidad, el salón decidió usar el diseño de la persona en la que más se confiara que el PCB funcionara, Markos. Dicho compañero hizo 8 versiones del mismo diseño, siendo la última la cual fue impresa en masa. </p>
+        <p> Por mi parte, también decidí confiar en Markos e imprimir su diseño de la placa de cobre.La siguiente foto representa la placa de cobre en cuestió</p>
+        <img src="Imagenes/placaMarkos.jpg" alt="Placa de cobre de Markos (8) (foto tomada por Markos)" width="400">
+        <h2> --Soldadura II-- </h2>
+        <p> Tras la impresión de la placa era momento de empezar a soldar. Sin embargo, antes de empezar hubo que pedir los componentes del PCB, los cuales fueron: </p>
+        <ul> 
+              <li> Tres resistencias (2 de 1KΩ y 1 de 220Ω) </li>
+              <li> Un potenciómetro</li>
+              <li> Una bornera</li>
+              <li> Un capacitor de 47µF</li>
+              <li> Un transistor NPN</li>
+              <li> Un diodo/LED de color verde</li>
+              <li> Un timer NE555</li>
+          </ul>
+        <p> Al ya tener los materiales, se empezó la soldadura. Fue un proceso muy complicado pues debido a la falta de experiencia hubo varios errores pero al final se lograron soldar todos los componentes.</p>
+        <img src="Imagenes/weyescu.jpg" alt="Equipo de soldado, conformado por: Alexander, Alonso, Pablo, Lorenzo, Markos, Rodrigo y Santy" width="400">
+        <img src="Imagenes/potencionmetro.jpg" alt="Soldadura del potenciómetro" width="400">
+        <img src="Imagenes/timer.jpg" alt="Soldadura del timer NE555" width="400">
+        <img src="Imagenes/posterior.jpg" alt="Foto del lado posterior con el potenciómetro y el timer NE555 ya soldados" width="400">
+        <img src="Imagenes/resistencias.jpg" alt="Soldadura de las resistencias (3)" width="400">
+        <img src="Imagenes/posterior2.jpg" alt="Foto del lado posterior con las resistencias ya soldadas" width="400">
+        <img src="Imagenes/capacitor.jpg" alt="Soldadura del capacitor y del transistor" width="400">
+        <img src="Imagenes/posterior3.jpg" alt="Foto del lado posterior con el capacitor y el transistor ya soldado" width="400">
+        <img src="Imagenes/LED.jpg" alt="Soldadura del LED y la bornera" width="400">
+        <img src="Imagenes/posterior4.jpg" alt="Foto del lado posterior con el lED y la bornera ya soldados" width="400">
+        <img src="Imagenes/completo.jpg" alt="Soldadura completa (con todos los componentes)" width="400">
+        <img src="Imagenes/posterior5.jpg" alt="Foto del PCB ya completo" width="400">
+      </section>
